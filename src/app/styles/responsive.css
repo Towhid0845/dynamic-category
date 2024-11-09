@@ -267,6 +267,16 @@
 }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+      .nav-side-menu .dropdown-side-menu {
+    width: 200px;
+}
+.nav-side-menu .dropdown-side-menu > ul > li > ul {
+    min-width: 180px;
+}
+
+.nav-side-menu .dropdown-side-menu > ul > li > ul > li > ul {
+    min-width: 180px;
+}
   header .header-form .search {
     height: 39px;
 }
@@ -414,6 +424,17 @@
   }
 }
 @media (min-width: 481px) and (max-width: 575px) {
+
+    .nav-side-menu .dropdown-side-menu {
+    width: 200px;
+}
+.nav-side-menu .dropdown-side-menu > ul > li > ul {
+    min-width: 160px;
+}
+
+.nav-side-menu .dropdown-side-menu > ul > li > ul > li > ul {
+    min-width: 160px;
+}
     #dobday, #dobmonth, #dobyear, #gender {
    
     width: 103px;
@@ -593,6 +614,9 @@
   }
 }
 @media (max-width: 480px) {
+  .nav-side-menu .dropdown-side-menu {
+    width: 200px;
+}
     #dobday, #dobmonth, #dobyear, #gender {
    
     width: 103px;

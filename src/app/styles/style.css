@@ -966,4 +966,12 @@ header .icon_section ul li span {
   font-size: 14px;
   margin-top: 5px;
 }
+
+.date_picker select{
+  height: 36px;
+  padding: 0 5px;
+  width: 120px;
+  background-color: #fff;
+  color: #000;
+}
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,22 @@ function Signup() {
     confirmPassword: "",
   });
 
+  const days = Array.from({ length: 31 }, (_, i) => i + 1);
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+const years = Array.from({ length: 100 }, (_, i) => 2024 - i);
 
   const handlePasswordChange = (e) => {
     const value = e.target.value;
@@ -193,10 +209,31 @@ function Signup() {
                     <div className="d-flex align-items-start gap-1">
                       <div className="d-flex flex-column">
                         <label htmlFor="">Birthday</label>
-                        <div>
-                          <select id="dobday"></select>
-                          <select id="dobmonth"></select>
-                          <select id="dobyear"></select>
+                        <div className="date_picker d-flex gap-1">
+                          <select id="dobday">
+                            <option defaultValue="day">day</option>
+                            {days.map((day) => (
+                              <option key={day} value={day}>
+                                {day}
+                              </option>
+                            ))}
+                          </select>
+                          <select id="dobmonth">
+                            <option defaultValue="month">month</option>
+                            {months.map((month, index) => (
+                              <option key={index} value={index + 1}>
+                                {month}
+                              </option>
+                            ))}
+                          </select>
+                          <select id="dobyear">
+                            <option defaultValue="year">year</option>
+                            {years.map((year) => (
+                              <option key={year} value={year}>
+                                {year}
+                              </option>
+                            ))}
+                          </select>
                         </div>
                       </div>
                       <div className="input-field d-flex flex-column">

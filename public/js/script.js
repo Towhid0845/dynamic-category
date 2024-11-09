@@ -113,6 +113,7 @@ $(".banner-bottom-category-slider").slick({
 
 
 
+
 $(".mobile-topbar .bars i").click(function () {
   $(".mobile-menu-main").addClass("show-mobile-menu");
 });
